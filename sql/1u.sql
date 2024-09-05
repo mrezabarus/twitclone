@@ -7,7 +7,7 @@ create table if not exists public.users (id bigserial PRIMARY KEY, username cite
 create table if not exists public.posts (id bigserial primary key, user_id bigint REFERENCES public.users(id), content text, created_at TIMESTAMP default now(), updated_at TIMESTAMP default now());
 
 
-create table if not exists public.follows(user_id BIGINT not null REFERENCES public.users (id), follower_id bigint not null REFERENCES public.users (id), created_at TIMESTAMP DEFAULT now(), updated_at TIMESTAMP DEFAULT now());
+create table if not exists public.follows(user_id BIGINT not null REFERENCES public.users (id), follower_id bigint not null REFERENCES public.users (id), created_at TIMESTAMP DEFAULT now(), updated_at TIMESTAMP DEFAULT now(), UNIQUE(user_id, follower_id));
 
 
 create index posts_user_id_index on public.posts (user_id);
