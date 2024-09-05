@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -6,8 +7,17 @@ export default function Home() {
             <div className="text-center my-4">
                 <h1>HCMG</h1>
             </div>
-            <div className="text-center my-4">
-                <h1>HCMG</h1>
+            <div>
+                <Link href="signin"
+                className="bg-slate-900 my-4 p-3 rounded-lg block"
+                >Sign In
+                </Link>
+            </div>
+            <div>
+                <Link href="signup"
+                className="bg-slate-900 my-4 p-3 rounded-lg block"
+                >Sign Up
+                </Link>
             </div>
         </div>
       </main>
