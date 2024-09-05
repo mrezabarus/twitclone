@@ -14,6 +14,7 @@ Buka folder project
     \i sql/1u.sql (untuk menjalankan script sql di folder sql)
     \q untuk kembali ke terminal bash
     \x untuk bentuk tampilan yang lebih baik
+    \d follows untuk melihat struktur table follows
 
     psql -U postgres -p 5432 -d lemi_app -f sql/1d.sql (untuk menjalankan script sql tanpa harus masuk ke terminal psql)
 
