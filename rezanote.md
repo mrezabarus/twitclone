@@ -29,3 +29,7 @@ Buka folder project
         3. git status
         4. git push
 
+5. untuk menjalankan typescript file pertama install 
+    npm i -g tsx
+    lalu 
+        tsc scripts/namafile.ts
